@@ -6,18 +6,16 @@ import { TypeAnimation } from "react-type-animation";
 
 function HeroSection() {
   return (
-    <Stack
-      minHeight={"85vh"}
-      position={"relative"}
-      bgcolor={"primary.main"}
-      justifyContent={"center"}
-    >
+    <Stack minHeight={"85vh"} position={"relative"} justifyContent={"center"}>
       <Box
         position={"absolute"}
         width={"100%"}
         height={"100%"}
-        bgcolor={"#3acff02e"}
         zIndex={999}
+        sx={{
+          backgroundImage:
+            "url(https://res.cloudinary.com/dby2vbxv3/image/upload/v1698931809/Kaid%20Immigration/Banner/banner.png)",
+        }}
       >
         <Stack
           mx={"auto"}
@@ -39,6 +37,7 @@ function HeroSection() {
               fontWeight={"600"}
               color={"#fff"}
               sx={{ fontSize: "clamp(2.3rem, 7vw, 4rem)" }}
+              textAlign={"center"}
             >
               Kaid Immigration
             </Typography>
@@ -47,6 +46,8 @@ function HeroSection() {
               fontWeight={"600"}
               color={"#fff"}
               sx={{ fontSize: "clamp(1.8rem, 7vw, 4rem)" }}
+              textAlign={"center"}
+
             >
               <TypeAnimation
                 style={{
@@ -78,20 +79,6 @@ function HeroSection() {
           </Box>
         </Stack>
       </Box>
-      <video
-        src="https://res.cloudinary.com/dby2vbxv3/video/upload/v1697740037/Kaid%20Immigration/Banner/banner.mp4"
-        autoPlay
-        muted
-        loop
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
-      ></video>
     </Stack>
   );
 }

@@ -15,9 +15,7 @@ function Contact() {
           xs: 2,
           md: 6,
         }}
-      >
-        <Typography variant="h4">Contact</Typography>
-      </Box>
+      ></Box>
     </Box>
   );
 }

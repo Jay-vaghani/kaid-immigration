@@ -3,6 +3,7 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import NavBar from "./components/layout/Navbar/NavBar";
 import Loading from "./components/utils/Loading";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/layout/Footer/Footer";
 
 const Home = lazy(() => import("./components/pages/Home/Home"));
 const Services = lazy(() => import("./components/pages/Services/Service"));
@@ -13,7 +14,7 @@ function App() {
     palette: {
       primary: {
         main: "#3adcff",
-        light: "#3acff02e"
+        light: "#3acff02e",
       },
       secondary: {
         main: "#000",
@@ -50,6 +51,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 }
