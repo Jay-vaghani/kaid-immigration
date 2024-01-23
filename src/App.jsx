@@ -26,14 +26,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <NavBar />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Suspense fallback={<Loading />}>
-              <Home />
-            </Suspense>
-          }
-        />
+        <Route path="/" element={<Home />} />
         <Route
           path="/service"
           element={

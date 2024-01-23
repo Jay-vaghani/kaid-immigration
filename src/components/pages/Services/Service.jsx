@@ -70,17 +70,7 @@ function Service() {
           md: 6,
         }}
       >
-        <Typography variant="h3" textAlign={"center"} my={4}>
-          Our Service
-          <div
-            style={{
-              width: "253px",
-              margin: "0 auto",
-              height: "3px",
-              backgroundColor: "#3adcff",
-            }}
-          ></div>
-        </Typography>
+       <h1 className="display-5 fw-600 text-center mb-5">OUR SERVICES</h1>
         <Grid container spacing={2}>
           {services.map((data, index) => (
             <ServicesCard

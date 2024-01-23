@@ -19,7 +19,7 @@ function ServicesCard({ image, title, description }) {
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Card
-        elevation={"3"}
+        elevation={3}
         sx={{
           boxShadow: "3px 3px 8px #e4e4e4b0",
         }}

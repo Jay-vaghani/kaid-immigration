@@ -13,8 +13,8 @@ function HeroSection() {
         height={"100%"}
         zIndex={999}
         sx={{
-          backgroundImage:
-            "url(https://res.cloudinary.com/dby2vbxv3/image/upload/v1698931809/Kaid%20Immigration/Banner/banner.png)",
+          background:
+            "linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(https://res.cloudinary.com/dby2vbxv3/image/upload/v1698931809/Kaid%20Immigration/Banner/banner.png)",
         }}
       >
         <Stack

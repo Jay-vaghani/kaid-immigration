@@ -78,6 +78,7 @@ function Section3() {
       <Grid container spacing={2} rowGap={2}>
         {CardArray.map((data, index) => (
           <Section3Cards
+            key={index}
             iconTitle={data.title}
             icon={data.icon}
             description={data.des}
